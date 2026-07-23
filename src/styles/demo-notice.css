@@ -1,0 +1,24 @@
+.demo-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+  color: #fde68a;
+}
+
+.demo-notice-badge {
+  flex-shrink: 0;
+  background: #f59e0b;
+  color: #1c1400;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 999px;
+}

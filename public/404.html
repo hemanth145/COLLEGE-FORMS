@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Meridian University</title>
+  <script>
+    // GitHub Pages has no server-side routing, so a direct hit on a deep link
+    // (e.g. /COLLEGE-FORMS/academics) 404s. This encodes the path into a query
+    // string and redirects to index.html, which decodes it back on load.
+    var pathSegmentsToKeep = 1; // keep "/COLLEGE-FORMS"
+    var l = window.location;
+    var path = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+    var rest = l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/');
+    l.replace(
+      path + '/?/' + rest.replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body></body>
+</html>

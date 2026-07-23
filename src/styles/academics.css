@@ -1,0 +1,22 @@
+.program-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.program-head h3 {
+  font-size: 1.1rem;
+}
+
+.program-meta {
+  color: #a5b4fc;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.program-desc {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}

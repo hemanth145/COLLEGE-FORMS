@@ -1,0 +1,55 @@
+.register-container {
+  max-width: 720px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.register-error {
+  color: #fca5a5;
+  font-size: 0.9rem;
+}
+
+.register-confirm {
+  max-width: 640px;
+}
+
+.register-confirm-lead {
+  color: var(--text-dim);
+  margin-bottom: 28px;
+}
+
+.confirm-card {
+  margin-bottom: 28px;
+}
+
+.confirm-card dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.confirm-card dl div:last-child {
+  border-bottom: none;
+}
+
+.confirm-card dt {
+  color: var(--text-dim);
+}
+
+.confirm-card dd {
+  font-weight: 600;
+  text-align: right;
+}
